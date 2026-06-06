@@ -37,7 +37,7 @@ https://github.com/satishucm-jpg/asksql-ai
 
 Home Page
 
----
+![Home Page](screenshots/home-page.png)
 
 ## Natural Language to SQL Demo
 
