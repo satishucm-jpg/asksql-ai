@@ -31,68 +31,7 @@ https://github.com/satishucm-jpg/asksql-ai
 
 ---
 
-# 📌 Features
-
-- Natural Language to SQL using OpenAI GPT
-- FastAPI backend
-- MySQL database integration
-- SQL query validation and safety checks
-- Interactive Swagger API documentation
-- Streamlit frontend
-- Railway cloud database
-- Render deployment
-- End-to-end AI workflow
-
----
-
-# 🏗️ Architecture
-
-text User   │   ▼ Streamlit Frontend   │   ▼ FastAPI Backend   │   ▼ OpenAI GPT   │   ▼ SQL Validation Layer   │   ▼ MySQL Database (Railway) 
-
----
-
-# 🛠️ Tech Stack
-
-### Frontend
-
-- Streamlit
-- Pandas
-
-### Backend
-
-- FastAPI
-- Uvicorn
-- SQLAlchemy
-
-### Database
-
-- MySQL
-- Railway
-
-### AI
-
-- OpenAI GPT
-
-### Deployment
-
-- Streamlit Cloud
-- Render
-- Railway
-
-### Other Tools
-
-- Docker
-- GitHub
-
----
-
-# 📂 Project Structure
-
-text asksql-ai/ │ ├── backend/ │   ├── main.py │   ├── database.py │   ├── openai_service.py │   ├── sql_guard.py │   └── requirements.txt │ ├── frontend/ │   ├── app.py │   └── requirements.txt │ ├── sql/ │   └── sample_data.sql │ ├── screenshots/ │   ├── home-page.png │   ├── nl-to-sql-demo.png │   ├── api-docs.png │   ├── docker-mysql.png │   └── products-query.png │ ├── docker-compose.yml ├── requirements.txt ├── start.sh └── README.md 
-
----
-
-# 📸 Screenshots
+# 📸 Project Demo
 
 ## Home Page
 
@@ -116,6 +55,18 @@ NL to SQL Demo
 
 ---
 
+## Customer Query Results
+
+Customers Query
+
+---
+
+## Product Query Results
+
+Products Query
+
+---
+
 ## API Documentation
 
 FastAPI Swagger documentation.
@@ -132,11 +83,58 @@ Docker MySQL
 
 ---
 
-## Product Query Results
+# 📌 Features
 
-Natural language query executed against MySQL.
+- Natural Language to SQL using OpenAI GPT
+- FastAPI backend
+- MySQL database integration
+- SQL query validation and safety checks
+- Interactive Swagger API documentation
+- Streamlit frontend
+- Railway cloud database
+- Render deployment
+- End-to-end AI workflow
 
-Products Query
+---
+
+# 🏗️ Architecture
+
+text User   │   ▼ Streamlit Frontend   │   ▼ FastAPI Backend   │   ▼ OpenAI GPT   │   ▼ SQL Validation Layer   │   ▼ MySQL Database (Railway) 
+
+---
+
+# 🛠️ Tech Stack
+
+### Frontend
+- Streamlit
+- Pandas
+
+### Backend
+- FastAPI
+- Uvicorn
+- SQLAlchemy
+
+### Database
+- MySQL
+- Railway
+
+### AI
+- OpenAI GPT
+
+### Deployment
+- Streamlit Cloud
+- Render
+- Railway
+
+### Other Tools
+- Docker
+- GitHub
+
+---
+
+# 📂 Project Structure
+
+text asksql-ai/ │ ├── backend/ │   ├── main.py │   ├── database.py │   ├── openai_service.py │   ├── sql_guard.py │ ├── frontend/ │   ├── app.py │ ├── sql/ │   └── sample_data.sql │ ├── screenshots/ │   ├── home-page.png │   ├── nl-to-sql-demo.png │   ├── customers-query.png │   ├── products-query.png │   ├── api-docs.png │   └── docker-mysql.png │ ├── docker-compose.yml ├── requirements.txt ├── start.sh └── README.md 
 
 ---
 
@@ -158,17 +156,17 @@ AskSQL AI includes a SQL validation layer that prevents execution of unsafe stat
 
 Allowed:
 
-sql SELECT 
+sql SELECT * FROM customers; 
 
 Blocked:
 
-sql DROP TABLE 
+sql DROP TABLE customers; 
 
-sql DELETE FROM 
+sql DELETE FROM customers; 
 
-sql TRUNCATE 
+sql TRUNCATE TABLE customers; 
 
-sql ALTER TABLE 
+sql ALTER TABLE customers; 
 
 This ensures generated SQL remains read-only and safe.
 
@@ -219,14 +217,14 @@ bash streamlit run frontend/app.py
 
 Satish Reddy Mule
 
-GitHub:
+GitHub:  
 https://github.com/satishucm-jpg
 
-LinkedIn:
-Add your LinkedIn profile link
+LinkedIn:  
+Add your LinkedIn profile URL
 
 ---
 
-# ⭐ If you found this project interesting
+# ⭐ Support
 
-Give the repository a star and feel free to contrib
+If you found this project useful, please consider giving it a star ⭐ on Git
