@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import pandas as pd
 
-API_URL = "API_URL = "https://asksql-ai.onrender.com/ask""
+API_URL = "https://asksql-ai.onrender.com/ask"
 
 st.set_page_config(page_title="AskSQL AI", page_icon="🧠", layout="wide")
 
