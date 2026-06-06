@@ -41,47 +41,23 @@ Home Page
 
 ## Natural Language to SQL Demo
 
-User asks:
+![NL to SQL Demo](screenshots/nl-to-sql-demo.png)
 
-Show customers from Chicago
+## Customer Query
 
-Generated SQL:
+![Customer Query](screenshots/customers-query.png)
 
-sql SELECT * FROM customers WHERE city = 'Chicago'; 
+## Product Query
 
-Results are automatically returned from MySQL.
-
-NL to SQL Demo
-
----
-
-## Customer Query Results
-
-Customers Query
-
----
-
-## Product Query Results
-
-Products Query
-
----
+![Products Query](screenshots/products-query.png)
 
 ## API Documentation
 
-FastAPI Swagger documentation.
+![API Docs](screenshots/api-docs.png)
 
-API Docs
+## Docker MySQL
 
----
-
-## MySQL Running in Docker
-
-Local MySQL database running inside Docker.
-
-Docker MySQL
-
----
+![Docker MySQL](screenshots/docker-mysql.png)
 
 # 📌 Features
 
